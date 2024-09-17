@@ -2,12 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { Logo } from "../../components/logo/Logo";
 import { Menu } from "./menu/Menu";
+import { FlexContainer } from "../../components/FlexContainer";
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo/>
-            <Menu/>
+            <FlexContainer justify={"space-between"}>
+                <Logo />
+                <Menu />
+            </FlexContainer>
         </StyledHeader>
     );
 };
@@ -15,7 +18,4 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background-color: lightpink;
-    display: flex;
-    justify-content: space-between;
-
 `
