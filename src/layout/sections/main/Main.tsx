@@ -23,14 +23,12 @@ export const Main = () => {
                     </div>
                 </PhotoWrapper>
             </FlexContainer>
-
         </StyledMain>
-
     );
 };
 
 
-const StyledMain = styled.div`
+const StyledMain = styled.main`
     min-height: 100vh;
     background-color: lightgrey;
 `
