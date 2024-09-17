@@ -13,10 +13,9 @@ export const Header = () => {
 };
 
 
-
 const StyledHeader = styled.header`
-    background-color: lightgreen;
+    background-color: lightpink;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
 `
