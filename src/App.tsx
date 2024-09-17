@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Header } from './layout/header/Header';
 import { Main } from './layout/sections/main/Main';
 import { SocialNetworks } from './layout/sections/social_networks/Social_Networks';
-
+import { About } from './layout/sections/about/About';
 
 function App() {
     return (
@@ -11,6 +11,7 @@ function App() {
             <Header/>
             <Main/>
             <SocialNetworks/>
+            <About/>
         </div>
     );
 }

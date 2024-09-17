@@ -5,7 +5,7 @@ import { Icon } from "../../../components/icon/Icon";
 
 export const SocialNetworks = () => {
     return (
-        <NetworksIcon>
+        <StyledSocialNetworks>
             <ul>
                 <li>
                     <a href=""><Icon iconId={"dribble"} width={"122"}/></a>
@@ -20,12 +20,12 @@ export const SocialNetworks = () => {
                     <a href=""><Icon iconId={"behance"} width={"162"}/></a>
                 </li>
             </ul>
-        </NetworksIcon>
+        </StyledSocialNetworks>
     );
 };
 
 
-const NetworksIcon = styled.nav`
+const StyledSocialNetworks = styled.nav`
     background-color: lightgreen;
     border: 1px solid red;
 
