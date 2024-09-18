@@ -11,12 +11,10 @@ export const WorkExperience = () => {
         <StyledWorkExperience>
             <FlexContainer>
                 <WorkArea iconId={"computer"} title={"Web Design"} 
-                text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} 
-                />
+                text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} />
                 <WorkArea iconId={"paint"} title={"UI/UX Design"} 
-                text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} 
-                />
-                <Skills></Skills>
+                text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} />
+                <Skills />
             </FlexContainer>
         </StyledWorkExperience>
     )

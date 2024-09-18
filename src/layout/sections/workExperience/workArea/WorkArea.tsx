@@ -5,8 +5,7 @@ import { Icon } from "../../../../components/icon/Icon";
 type WorkAreaPropsType = {
     iconId: string,
     title: string,
-    text: string,
-    
+    text: string    
 }
 
 
@@ -22,7 +21,13 @@ export const WorkArea = (props: WorkAreaPropsType) => {
 
 
 const StyledWorkArea = styled.div`
-background-color: #fbc1cb;`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #fbc1cb;
+max-width: 540px;
+`
 
 const WorkIcon = styled.img``
 
