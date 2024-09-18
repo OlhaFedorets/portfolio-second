@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { SocialNetworks } from "./SocialNetworks";
+import { SocialNetworks } from "./socialNetworks/SocialNetworks";
 import { FlexContainer } from "../../../components/FlexContainer";
-import { PersonalAchievements } from "./PersonalAchievements"
+import { PersonalAchievements } from "./personalAchievements/PersonalAchievements"
 
 
 
@@ -24,6 +24,7 @@ export const About = () => {
 
 const StyledAbout = styled.section`
     background-color: #eff7af;
+    min-height: 100vh;
     
 `
 const StyledPersonalInfo = styled.div`
