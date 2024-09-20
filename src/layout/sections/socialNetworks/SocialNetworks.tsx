@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Icon } from "../../../../components/icon/Icon";
+import { Icon } from "../../../components/icon/Icon";
 
 
 
@@ -26,7 +26,7 @@ export const SocialNetworks = () => {
 };
 
 
-const StyledSocialNetworks = styled.nav`
+const StyledSocialNetworks = styled.section`
     
     background-color: #bbf3bb;
     
