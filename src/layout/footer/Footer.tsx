@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../components/icon/Icon";
+import { theme } from "../../styles/Theme";
 
 
 
@@ -28,7 +29,7 @@ export const Footer = () => {
 
 
 const StyledFooter = styled.section`
-    background-color: #c08787;
+    background-color: ${theme.colors.black} !important;
 `
 
 const SocialList = styled.ul`
