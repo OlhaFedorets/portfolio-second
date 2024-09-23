@@ -24,11 +24,11 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background-image: ${theme.colors.gradientBG};
+    color: ${theme.colors.white};
+    padding: 20px 0;    
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99999999;
-
-    
+    z-index: 99999999;    
 `
