@@ -10,17 +10,19 @@ import { theme } from "../../../../styles/Theme";
 export const Skills = () => {
     return (
         <StyledSkills>
-           <h3>What I Can Do To Help Build Your Product</h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
-           <BrandName>
-                <Photo src={photo}/>
+            <h3>What I Can Do To Help Build Your Product</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+            <BrandName>
+                <Photo src={photo} />
                 <div>
-                <span>Alea Angelina</span>
-                <span>Web Designer</span>
-                </div>                
-           </BrandName>
-           <Indicator percent={"+52.5%"} title={"Task finished"}/>
-           <Indicator percent={"+67.5%"} title={"Progress speed"}/>
+                    <span>Alea Angelina</span>
+                    <span>Web Designer</span>
+                </div>
+            </BrandName>
+            <Indicators>
+                <Indicator percent={"+52.5%"} title={"Task finished"} />
+                <Indicator percent={"+67.5%"} title={"Progress speed"} />
+            </Indicators>
         </StyledSkills>
     )
 }
@@ -80,11 +82,15 @@ const BrandName = styled.div`
 `
 
 const Photo = styled.img`
-width: 50px;
-height: 50px;
-border-radius: 50%;
-object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 `
 
 
-
+const Indicators = styled.div`
+    display: flex;
+    gap: 60px;
+    margin-top: 80px;
+`
