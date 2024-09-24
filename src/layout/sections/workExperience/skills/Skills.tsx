@@ -93,4 +93,17 @@ const Indicators = styled.div`
     display: flex;
     gap: 60px;
     margin-top: 80px;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        border: 1px solid #000;
+width: 420px;
+height: 0px;
+top: -40px;
+
+position: absolute;
+    }
 `
