@@ -36,6 +36,6 @@ const StyledSocialNetworks = styled.section`
         gap:150px;
         //height: 100%;
         //min-height: 135px;
-        padding: 55px 0 50px;
+        /* padding: 55px 0 50px; */
     }
 `
