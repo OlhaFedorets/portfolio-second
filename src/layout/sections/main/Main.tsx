@@ -33,7 +33,7 @@ export const Main = () => {
 
 
 const StyledMain = styled.section`
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     margin-top: 90px;
 `
