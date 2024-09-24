@@ -25,20 +25,41 @@ max-width: 793px;
     border: 1px solid red;
 `
 const Slide = styled.div`
-
+margin-top: 30px;
 text-align: center;
 
 `
 
 const Name = styled.span`
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+
 `
 
 const Position = styled.span`
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin: 10px 0 20px;;
 `
 
 const Text = styled.p`
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
 `
 const Photo = styled.img`
-max-width: 70px;
+    max-width: 70px;
+    border-radius: 50%;
+    margin-top: 40px;
 `
 
