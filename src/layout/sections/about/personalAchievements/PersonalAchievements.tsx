@@ -1,43 +1,71 @@
 import React from "react";
 import styled from "styled-components";
+import { theme } from "../../../../styles/Theme";
 
 
-export const PersonalAchievements = () => {
+
+export const PersonalAchievements = (props: { achievementItems: Array<string> }) => {
     return (
         <StyledAchievements>
-            <li>Projects Done</li>
-            <li>Happy Clients</li>
-            <li>Clients on Worldwide</li>
+
+            {props.achievementItems.map((item, index) => {
+                return <AchievementItems key={index}>
+                    {item}
+                </AchievementItems>
+            })}
+
         </StyledAchievements>
     )
 }
 
 
 const StyledAchievements = styled.ul`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 150px;
+    margin-top: 50px;
+`
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 150px;
+const AchievementItems = styled.li`
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: ${theme.colors.white};
+    gap: 16px;
 
-        li::before {
+
+    &::before {
         display: inline-block;
-        width: 50px;
-        height: 50px;
-        border: 1px solid black;
-        gap: 15px
+        gap: 15px;
+        border-radius: 30px;
+        padding: 20px 30px;
+        width: 130px;
+        height: 130px;
+        box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.25);
+        background-image: linear-gradient(214deg, #b75cff 0%, #671ae4 100%);
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 180%;
+        letter-spacing: 0.01em;
+        color: ${theme.colors.white};
+}
+        
+        &:nth-child(1)::before {
+            content: "2K";            
         }
 
-
-        li:nth-child(1)::before {
-            content: "2K";
-        }
-
-        li:nth-child(2)::before {
+        &:nth-child(2)::before {
             content: "4K";
         }
 
-        li:nth-child(3)::before {
+        &:nth-child(3)::before {
             content: "9K";
         }
 `
