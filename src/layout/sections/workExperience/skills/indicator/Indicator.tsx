@@ -22,7 +22,7 @@ export const Indicator = (props: IndicatorPropsType) => {
 
 
 const StyledIndicator = styled.div`
-   max-width: 132px 
+   /* max-width: 132px  */
 `
 const Percentages = styled.span`
     
