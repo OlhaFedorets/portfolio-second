@@ -34,6 +34,10 @@ button {
     border: none;
 }
 
+section {
+    padding: 100px 0;
+}
+
 section:nth-of-type(3n+1) {
     background-color: ${theme.colors.white};
 }
