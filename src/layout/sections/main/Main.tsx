@@ -48,7 +48,11 @@ const MainTitle = styled.h1`
     color: ${theme.colors.black};
 
     span {
-        color: ${theme.colors.gradientAccent};
+        background-image: ${theme.colors.gradientAccent};
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 `
 
