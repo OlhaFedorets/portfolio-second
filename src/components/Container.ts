@@ -1,10 +1,15 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
-    max-width: 1230px;
+type ContainerPropsType = {
+    maxWidth?: string
+    padding?: string
+}
+
+export const Container = styled.div<ContainerPropsType>`
+    max-width: ${props => props.maxWidth || "1230px"};
     width: 100%;
     min-height: 100%;
-    padding: 0 15px;
+    padding:  ${props => props.padding || "0 15px"};
     margin: 0 auto;
     border: 1px solid red;
 ` 
