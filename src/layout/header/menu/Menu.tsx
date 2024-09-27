@@ -47,5 +47,7 @@ const Link = styled.a`
     text-align: center;
     color: ${theme.colors.white};
     
-    
+    &:hover {
+        transform: translateY(-4px);
+    }
 `
