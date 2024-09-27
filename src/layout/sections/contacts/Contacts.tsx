@@ -81,10 +81,26 @@ const SecondColumn = styled.div`
 `
 
 const Field = styled.input`
-    
     width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    width: 388px;
+    height: 34px;
+    background-color: ${theme.colors.black};
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
 
 
+color: ${theme.colors.white};
+
+
+    &::placeholder {
+        text-align: start;
+        color: rgba(255, 255, 255, 0.5);
+    }
 `
 
 const Button = styled.button`
