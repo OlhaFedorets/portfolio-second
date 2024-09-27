@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../../components/icon/Icon";
+import { theme } from "../../../styles/Theme";
 
 
 
@@ -34,8 +35,17 @@ const StyledSocialNetworks = styled.section`
         justify-content: center;
         align-items: center;
         gap:150px;
+        
         //height: 100%;
         //min-height: 135px;
         /* padding: 55px 0 50px; */
+
+        li>a {
+            color: rgba(255, 255, 255, 0.5);
+
+            &:hover {
+            color: ${theme.colors.white};
+            }
+        }
     }
 `
