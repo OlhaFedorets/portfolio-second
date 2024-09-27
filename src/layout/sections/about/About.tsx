@@ -36,7 +36,6 @@ const StyledPersonalInfo = styled.div`
 
 const StyledPersonalTitle = styled.h2`
     flex: 1;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 100px;
     line-height: 120%;
@@ -46,7 +45,6 @@ const StyledPersonalTitle = styled.h2`
 const StyledPersonalText = styled.p`
     flex: 2;
     max-width: 793px;
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 30px;
     color: rgba(255, 255, 255, 0.5);
