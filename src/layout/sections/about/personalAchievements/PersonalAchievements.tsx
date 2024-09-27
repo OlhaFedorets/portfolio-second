@@ -31,7 +31,6 @@ const AchievementItems = styled.li`
     display: flex;
     align-items: center;
     text-align: center;
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 30px;
     line-height: 120%;
@@ -49,7 +48,6 @@ const AchievementItems = styled.li`
         height: 130px;
         box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.25);
         background-image: linear-gradient(214deg, #b75cff 0%, #671ae4 100%);
-        font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-size: 50px;
         line-height: 180%;
