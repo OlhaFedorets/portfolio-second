@@ -55,7 +55,7 @@ const Text = styled.p`
     line-height: 120%;
     letter-spacing: 0.02em;
     text-align: center;
-    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
 `
 const Photo = styled.img`
     max-width: 70px;
