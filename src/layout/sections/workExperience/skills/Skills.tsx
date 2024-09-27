@@ -30,17 +30,14 @@ export const Skills = () => {
 
 const StyledSkills = styled.div`
     max-width: 461px;
-    font-family: "Poppins", sans-serif;
     color: ${theme.colors.black};
     margin-left: 145px;
 
     h3 {
-        
         font-weight: 600;
         font-size: 40px;
         line-height: 125%;
-        letter-spacing: 0.01em;
-        
+        letter-spacing: 0.01em;        
     }
 
     p {
@@ -52,8 +49,6 @@ const StyledSkills = styled.div`
         margin: 10px 0 40px;
     }
 `
-
-
 
 const BrandName = styled.div`
     display: flex;
@@ -100,10 +95,10 @@ const Indicators = styled.div`
         content: "";
         display: inline-block;
         border: 1px solid #000;
-width: 420px;
-height: 0px;
-top: -40px;
+        width: 420px;
+        height: 0px;
+        top: -40px;
 
-position: absolute;
+        position: absolute;
     }
 `
