@@ -27,6 +27,7 @@ export const About = () => {
 
 const StyledAbout = styled.section`
     display: flex;
+    color: ${theme.colors.white};
 `
 const StyledPersonalInfo = styled.div`
         display: flex;
@@ -39,7 +40,7 @@ const StyledPersonalTitle = styled.h2`
     font-weight: 700;
     font-size: 100px;
     line-height: 120%;
-    color: ${theme.colors.white};
+    
 `
 
 const StyledPersonalText = styled.p`
@@ -47,6 +48,6 @@ const StyledPersonalText = styled.p`
     max-width: 793px;
     font-weight: 500;
     font-size: 30px;
-    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
 `
 
