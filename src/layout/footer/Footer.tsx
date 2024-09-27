@@ -10,15 +10,31 @@ import { theme } from "../../styles/Theme";
 
 export const Footer = () => {
     return (
-        <StyledFooter>            
+        <StyledFooter>
             <SocialList>
                 <SocialItem>
                     <SocialLink>
-                        <Icon iconId="dribble_logo" />
-                        <Icon iconId="upwork_logo" />
-                        <Icon iconId="youtube_logo" />
-                        <Icon iconId="linkedin_logo" />
-                        <Icon iconId="github_logo" />
+                        <Icon iconId="dribble_logo" width={"25"} height={"25"} viewBox={"0 0 25 25"}/>
+                    </SocialLink>
+                </SocialItem>
+                <SocialItem>
+                    <SocialLink>
+                        <Icon iconId="upwork_logo" width={"25"} height={"25"} viewBox={"0 0 25 25"}/>
+                    </SocialLink>
+                </SocialItem>
+                <SocialItem>
+                    <SocialLink>
+                        <Icon iconId="youtube_logo" width={"25"} height={"25"} viewBox={"0 0 25 25"}/>
+                    </SocialLink>
+                </SocialItem>
+                <SocialItem>
+                    <SocialLink>
+                        <Icon iconId="linkedin_logo" width={"25"} height={"25"} viewBox={"0 0 25 25"}/>
+                    </SocialLink>
+                </SocialItem>
+                <SocialItem>
+                    <SocialLink>                        
+                        <Icon iconId="github_logo" width={"25"} height={"25"} viewBox={"0 0 25 25"}/>
                     </SocialLink>
                 </SocialItem>
             </SocialList>
@@ -35,14 +51,30 @@ const StyledFooter = styled.footer`
 `
 
 const SocialList = styled.ul`
+    display: flex;
+    justify-content: center;
+    gap: 25px;
     margin-bottom: 100px;
 `
 const SocialItem = styled.li`
-
+    
 `
 
 const SocialLink = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.5);
+
+    &:hover {
+        color: ${theme.colors.white};
+        transform: translateY(-4px);
+    }    
 `
 const Copyright = styled.small`
     display: block;
