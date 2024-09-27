@@ -61,7 +61,10 @@ const Form = styled.form`
     display: flex;
     justify-content: space-between;
     
-    
+    textarea {
+        resize: none;
+        height: 100px;
+    }
 `
 
 const FirstColumn = styled.div`
@@ -100,6 +103,10 @@ color: ${theme.colors.white};
     &::placeholder {
         text-align: start;
         color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:focus-visible {
+        outline: 1px solid rgba(255, 255, 255, 0.5);
     }
 `
 
