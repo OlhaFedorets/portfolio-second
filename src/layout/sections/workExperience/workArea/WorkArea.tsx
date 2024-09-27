@@ -41,20 +41,18 @@ const StyledWorkArea = styled.div`
 `
 
 const WorkIcon = styled.div`
-vertical-align: middle
+    vertical-align: middle
 `
 
 const WorkTitle = styled.h3`
-font-family: "Poppins", sans-serif;
-font-weight: 700;
-font-size: 30px;
-line-height: 120%;
-text-align: center;
-margin: 100px 0 10px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-align: center;
+    margin: 100px 0 10px;
 `
 
 const WorkText = styled.p`
-font-family: "Poppins", sans-serif;
 font-weight: 500;
 font-size: 20px;
 line-height: 120%;
