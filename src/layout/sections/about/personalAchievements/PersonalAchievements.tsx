@@ -35,7 +35,6 @@ const AchievementItems = styled.li`
     font-size: 30px;
     line-height: 120%;
     letter-spacing: 0.01em;
-    color: ${theme.colors.white};
     gap: 16px;
 
 
@@ -52,8 +51,7 @@ const AchievementItems = styled.li`
         font-size: 50px;
         line-height: 180%;
         letter-spacing: 0.01em;
-        color: ${theme.colors.white};
-}
+    }
         
         &:nth-child(1)::before {
             content: "2K";            
