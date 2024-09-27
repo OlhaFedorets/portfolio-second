@@ -21,12 +21,12 @@ export const Slider = () => {
 
 
 const StyledSlider = styled.div`
-max-width: 793px;
+    max-width: 793px;
     border: 1px solid red;
 `
-const Slide = styled.div`
-margin-top: 30px;
-text-align: center;
+    const Slide = styled.div`
+    margin-top: 30px;
+    text-align: center;
 
 `
 
