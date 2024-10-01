@@ -23,6 +23,7 @@ export const Menu = (props: { menuItems: Array<string> }) => {
 const StyledMenu = styled.nav`
     ul {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 40px;
 
@@ -34,7 +35,11 @@ const StyledMenu = styled.nav`
         border-radius: 100px;
         padding: 10px 20px;       
         background-image: ${theme.colors.gradientBG};
+        }
     }
+
+    @media ${theme.media.tablet} {
+        display: none;
     }
 `
 
