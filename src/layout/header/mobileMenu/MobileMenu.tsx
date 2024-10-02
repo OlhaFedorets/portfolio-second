@@ -81,8 +81,9 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
         width: 36px;
         height: 2px;
         background-color: ${theme.colors.white};
-        position: absolute;       
-        bottom: 40px;
+        position: absolute; 
+        left: 20px;      
+        bottom: 60px;
 
         ${props => props.isOpen && css<{isOpen: boolean}>`
          background-color: rgba(255, 255, 255, 0);
