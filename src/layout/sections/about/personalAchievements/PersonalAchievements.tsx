@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { theme } from "../../../../styles/Theme";
+import { font } from "../../../../styles/Common";
 
 
 
@@ -23,7 +24,7 @@ const StyledAchievements = styled.ul`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 150px;
+    /* gap: 150px; */
     margin-top: 50px;
 `
 
@@ -31,24 +32,26 @@ const AchievementItems = styled.li`
     display: flex;
     align-items: center;
     text-align: center;
-    font-weight: 500;
-    font-size: 30px;
+    max-width: 300px;
+    ${font({weight: 500, Fmax: 30, Fmin: 25})};
+    /* font-weight: 500;
+    font-size: 30px; */
     line-height: 120%;
     letter-spacing: 0.01em;
-    gap: 16px;
-
+    /* gap: 10px; */
 
     &::before {
-        display: inline-block;
-        gap: 15px;
+        display: block;
+        gap: 10px;
         border-radius: 30px;
         padding: 20px 30px;
-        width: 130px;
-        height: 130px;
+        max-width: 130px;
+        max-height: 130px;
         box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.25);
         background-image: linear-gradient(214deg, #b75cff 0%, #671ae4 100%);
-        font-weight: 700;
-        font-size: 50px;
+        ${font({weight: 700, Fmax: 50, Fmin: 36})};
+        /* font-weight: 700;
+        font-size: 50px; */
         line-height: 180%;
         letter-spacing: 0.01em;
     }
@@ -63,5 +66,11 @@ const AchievementItems = styled.li`
 
         &:nth-child(3)::before {
             content: "9K";
+        }
+
+        @media ${theme.media.tablet} {
+            flex-direction: column;
+            gap: 20px;
+            width: 150px;
         }
 `
