@@ -4,6 +4,7 @@ import { FlexContainer } from "../../../components/FlexContainer";
 import { PersonalAchievements } from "./personalAchievements/PersonalAchievements"
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
+import { font } from "../../../styles/Common";
 
 const achievementItems = ["Projects Done", "Happy Clients", "Clients on Worldwide"]
 
@@ -26,19 +27,21 @@ export const About = () => {
 
 
 const StyledAbout = styled.section`
-    display: flex;
     color: ${theme.colors.white};
 `
 const StyledPersonalInfo = styled.div`
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;        
+        align-items: center;
+        gap: 10px;        
 `
 
 const StyledPersonalTitle = styled.h2`
     flex: 1;
-    font-weight: 700;
-    font-size: 100px;
+    ${font({weight: 700, Fmax: 100, Fmin: 75})};
+    /* font-weight: 700;
+    font-size: 100px; */
     line-height: 120%;
     
 `
@@ -46,8 +49,10 @@ const StyledPersonalTitle = styled.h2`
 const StyledPersonalText = styled.p`
     flex: 2;
     max-width: 793px;
-    font-weight: 500;
-    font-size: 30px;
+    min-width: 449px;
+    ${font({weight: 500, Fmax: 30, Fmin: 25})};
+    /* font-weight: 500;
+    font-size: 30px; */
     opacity: 0.5;
 `
 
