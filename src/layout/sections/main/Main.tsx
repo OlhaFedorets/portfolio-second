@@ -76,9 +76,6 @@ const PhotoWrapper = styled.div`
         height: 100px;
         background-image: ${theme.colors.gradientAccent};
 
-        @media ${theme.media.tablet} {
-            display: none;
-
         span{
             
         :first-child {
@@ -88,7 +85,7 @@ const PhotoWrapper = styled.div`
             /* color: ${theme.colors.white}; */
         }
 
-         :last-child {
+        :last-child {
             /* font-family: 'Poppins', sans-serif; */
             font-weight: 500;
             font-size: 15px;
@@ -96,9 +93,11 @@ const PhotoWrapper = styled.div`
             }
         }
         
-    
-    }
+        @media ${theme.media.tablet} {
+            display: none; 
         }
+    }
+        
             
     
 
