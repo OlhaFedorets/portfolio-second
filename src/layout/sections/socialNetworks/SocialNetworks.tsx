@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../../components/icon/Icon";
 import { theme } from "../../../styles/Theme";
+import { Container } from "../../../components/Container";
+import { FlexContainer } from "../../../components/FlexContainer";
 
 
 
@@ -9,6 +11,7 @@ import { theme } from "../../../styles/Theme";
 export const SocialNetworks = () => {
     return (
         <StyledSocialNetworks>
+            <Container>
             <ul>
                 <li>
                     <a href=""><Icon iconId={"dribble"}  width={"123"} height={"38"} viewBox={"0 0 130 38"}/></a>
@@ -22,7 +25,8 @@ export const SocialNetworks = () => {
                 <li>
                     <a href=""><Icon iconId={"behance"} width={"162"} height={"38"} viewBox={"0 0 167 38"}/></a>
                 </li>
-            </ul>                      
+            </ul>
+            </Container>                                                          
         </StyledSocialNetworks>
     );
 };
@@ -32,7 +36,7 @@ const StyledSocialNetworks = styled.section`
         
     ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         gap:150px;
         
