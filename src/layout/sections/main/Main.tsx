@@ -4,6 +4,7 @@ import photo from "./../../../assets/images/home.jpg"
 import { FlexContainer } from "../../../components/FlexContainer";
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
+import { font } from "../../../styles/Common";
 
 
 export const Main = () => {
@@ -39,9 +40,10 @@ const StyledMain = styled.section`
 `
 
 const MainTitle = styled.h1`
-    font-family: "Poppins", sans-serif;
+    ${font({weight: 700, Fmax: 50, Fmin: 36})}
+    /* font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 50px; */
     //line-height: 120%;
     //letter-spacing: 0.01em;
     text-align: center;  
@@ -67,28 +69,35 @@ const PhotoWrapper = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: ${theme.colors.white};
         
         border-radius: 200px;
         width: 288px;
         height: 100px;
         background-image: ${theme.colors.gradientAccent};
-        
+
+        @media ${theme.media.tablet} {
+            display: none;
+
         span{
             
         :first-child {
-            font-family: 'Poppins', sans-serif;
+            /* font-family: 'Poppins', sans-serif; */
             font-weight: 700;
             font-size: 20px;
-            color: ${theme.colors.white};
+            /* color: ${theme.colors.white}; */
         }
 
          :last-child {
-            font-family: 'Poppins', sans-serif;
+            /* font-family: 'Poppins', sans-serif; */
             font-weight: 500;
             font-size: 15px;
-            color: ${theme.colors.white};
+            /* color: ${theme.colors.white}; */
             }
         }
+        
+    
+    }
         }
             
     
