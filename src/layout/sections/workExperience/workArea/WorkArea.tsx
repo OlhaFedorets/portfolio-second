@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../../../components/icon/Icon";
 import { theme } from "../../../../styles/Theme";
+import { font } from "../../../../styles/Common"
 
 type WorkAreaPropsType = {
     iconId: string,
@@ -30,8 +31,10 @@ const StyledWorkArea = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 288px;
+    max-width: 288px;
+    min-width: 220px;
     height: 460px;
+    /* width: 100%; */
     padding: 100px 20px;
     color: ${theme.colors.white};
     box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.25);
@@ -45,16 +48,18 @@ const WorkIcon = styled.div`
 `
 
 const WorkTitle = styled.h3`
-    font-weight: 700;
-    font-size: 30px;
+${font({weight: 700, Fmax: 30, Fmin: 22})};
+    /* font-weight: 700;
+    font-size: 30px; */
     line-height: 120%;
     text-align: center;
     margin: 100px 0 10px;
 `
 
 const WorkText = styled.p`
-font-weight: 500;
-font-size: 20px;
+${font({weight: 500, Fmax: 20, Fmin: 16})};
+/* font-weight: 500;
+font-size: 20px; */
 line-height: 120%;
 text-align: center;
 color: rgba(255, 255, 255, 0.5);
