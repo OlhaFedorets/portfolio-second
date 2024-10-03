@@ -113,8 +113,14 @@ const PhotoWrapper = styled.div`
 `
 
 const Photo = styled.img`
-width: 393px;
-height: 600px;
-object-fit: cover;
+    width: 393px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+
+    @media ${theme.media.mobile} {
+        width: 255px;
+    height: 400px;
+    }
 `
 
