@@ -143,9 +143,9 @@ const Button = styled.button`
     }
 
     @media ${theme.media.tablet} {
-        width: 150px;
-        height: 50px;
-        bottom: -50px;
+        width: 135px;
+        height: 40px;
+        bottom: -40px;
         padding: 0;
         svg {
             display: none;
