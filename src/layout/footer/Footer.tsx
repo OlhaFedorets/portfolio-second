@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../components/icon/Icon";
 import { theme } from "../../styles/Theme";
+import { font } from "../../styles/Common";
 
 
 
@@ -78,8 +79,9 @@ const SocialLink = styled.a`
 `
 const Copyright = styled.small`
     display: block;
-    font-weight: 500;
-    font-size: 20px;
+    ${font({weight: 500, Fmax: 20, Fmin: 16})}
+    /* font-weight: 500;
+    font-size: 20px; */
     letter-spacing: 0.02em;
     text-align: center;
     
