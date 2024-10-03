@@ -93,7 +93,7 @@ const PhotoWrapper = styled.div`
             }
         }
         
-        @media ${theme.media.tablet} {
+        @media screen and (max-width: 1010px) {
             display: none; 
         }
     }
