@@ -38,6 +38,7 @@ const StyledSocialNetworks = styled.section`
         display: flex;
         justify-content: space-between;
         align-items: center;
+        /* flex-wrap: wrap; */
         /* gap:150px; */
         
         //height: 100%;
@@ -50,6 +51,11 @@ const StyledSocialNetworks = styled.section`
             &:hover {
             color: ${theme.colors.white};
             }
+        }
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            gap: 15px;;
         }
     }
 `
