@@ -36,9 +36,9 @@ const StyledSocialNetworks = styled.section`
         
     ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        gap:150px;
+        /* gap:150px; */
         
         //height: 100%;
         //min-height: 135px;
