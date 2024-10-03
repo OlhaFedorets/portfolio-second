@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Icon } from "../../../components/icon/Icon";
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
+import { font } from "../../../styles/Common";
 
 
 
@@ -37,9 +38,7 @@ const StyledContacts = styled.section`
 `
 
 const Title = styled.h3`
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 50px;
+    ${font({weight: 400, Fmax: 50, Fmin: 36})}
     line-height: 120%;
     text-align: center;
     margin-bottom: 50px;
@@ -60,11 +59,20 @@ const Form = styled.form`
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+
+   
     
     textarea {
         resize: none;
         height: 100px;
     }
+    @media ${theme.media.tablet} {
+        flex-direction: column;
+        align-items: center;
+        gap: 110px;
+    }
+    
 `
 
 const FirstColumn = styled.div`
@@ -87,10 +95,11 @@ const Field = styled.input`
     width: 100%;
     border: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    width: 388px;
+    max-width: 388px;
     height: 34px;
     background-color: ${theme.colors.black};
 
+    
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -118,10 +127,11 @@ const Button = styled.button`
     background-image: ${theme.colors.gradientAccent};
     color: ${theme.colors.white};
 
-    font-family: "Poppins", sans-serif;
+    ${font({weight:400, Fmax: 20, Fmin: 16})}
+    /* font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 120%;
+    line-height: 120%; */
     
 
     position: absolute;
@@ -130,5 +140,15 @@ const Button = styled.button`
 
     svg {
         margin-right: 10px;
+    }
+
+    @media ${theme.media.tablet} {
+        width: 150px;
+        height: 50px;
+        bottom: -50px;
+        padding: 0;
+        svg {
+            display: none;
+        }
     }
 `
