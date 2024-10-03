@@ -33,7 +33,7 @@ const AchievementItems = styled.li`
     align-items: center;
     text-align: center;
     max-width: 300px;
-    ${font({weight: 500, Fmax: 30, Fmin: 25})};
+    ${font({weight: 500, Fmax: 30, Fmin: 22})};
     /* font-weight: 500;
     font-size: 30px; */
     line-height: 120%;
@@ -49,7 +49,7 @@ const AchievementItems = styled.li`
         max-height: 130px;
         box-shadow: 0 10px 4px 0 rgba(0, 0, 0, 0.25);
         background-image: linear-gradient(214deg, #b75cff 0%, #671ae4 100%);
-        ${font({weight: 700, Fmax: 50, Fmin: 36})};
+        ${font({weight: 700, Fmax: 50, Fmin: 30})};
         /* font-weight: 700;
         font-size: 50px; */
         line-height: 180%;
