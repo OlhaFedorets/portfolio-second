@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import ava from "./../../assets/images/avatar.webp"
-import { FlexContainer } from "../FlexContainer";
+import ava from "./../../assets/images/avatar.webp";
+import { font } from "../../styles/Common";
 
 
 
@@ -27,13 +27,15 @@ const StyledSlider = styled.div`
     const Slide = styled.div`
     margin-top: 30px;
     text-align: center;
+    ${font({weight: 500, Fmax: 20, Fmin: 16})}
 
 `
 
 const Name = styled.span`
-    font-family: "Playfair Display", sans-serif;
+${font({family: "Playfair Display", weight: 700, Fmax: 30, Fmin: 26})}
+    /* font-family: "Playfair Display", sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 30px; */
     line-height: 120%;
     letter-spacing: 0.01em;
 
@@ -41,8 +43,6 @@ const Name = styled.span`
 
 const Position = styled.span`
     display: block;
-    font-weight: 500;
-    font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
     text-align: center;
@@ -50,8 +50,6 @@ const Position = styled.span`
 `
 
 const Text = styled.p`
-    font-weight: 500;
-    font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
     text-align: center;
