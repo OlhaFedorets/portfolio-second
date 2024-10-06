@@ -40,8 +40,6 @@ const StyledPersonalInfo = styled.div`
 const StyledPersonalTitle = styled.h2`
     flex: 1;
     ${font({weight: 700, Fmax: 100, Fmin: 70})};
-    /* font-weight: 700;
-    font-size: 100px; */
     line-height: 120%;
     
 `
@@ -51,12 +49,10 @@ const StyledPersonalText = styled.p`
     max-width: 793px;
     min-width: 449px;
     ${font({weight: 500, Fmax: 30, Fmin: 23})};
-    /* font-weight: 500;
-    font-size: 30px; */
     opacity: 0.5;
 
     @media ${theme.media.mobile} {
         min-width: 355px;
-        }
+    }
 `
 
