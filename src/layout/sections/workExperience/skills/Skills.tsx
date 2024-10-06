@@ -48,12 +48,6 @@ const StyledSkills = styled.div`
         color: rgba(0, 0, 0, 0.5);
         margin: 10px 0 40px;
     }
-
-    /* @media screen and (max-width: 1200px) {
-        display: flex;
-        max-width: 1000px;
-
-    } */
 `
 
 const BrandName = styled.div`
@@ -61,9 +55,9 @@ const BrandName = styled.div`
     
 
         div {
-        display: flex;
-        flex-direction: column;
-        margin-left: 16px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 16px;
 
         span {
             ${font({weight: 500, Fmax: 20, Fmin: 16})}
