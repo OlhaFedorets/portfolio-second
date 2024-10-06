@@ -54,19 +54,16 @@ const Title = styled.h3`
 `
 
 const Form = styled.form`
-    /* max-width: 388px; */
-    /* max-height: 410px; */
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 10px;
 
-   
-    
     textarea {
         resize: none;
         height: 100px;
     }
+
     @media ${theme.media.tablet} {
         flex-direction: column;
         align-items: center;
@@ -78,8 +75,7 @@ const Form = styled.form`
 const FirstColumn = styled.div`
     max-width: 388px;
     width: 100%;
-    
-    
+        
     & :nth-child(2) {
         margin: 110px 0;
     }
@@ -128,12 +124,7 @@ const Button = styled.button`
     color: ${theme.colors.white};
 
     ${font({weight:400, Fmax: 20, Fmin: 16})}
-    /* font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 120%; */
     
-
     position: absolute;
     bottom: 0;
     right: 0;
