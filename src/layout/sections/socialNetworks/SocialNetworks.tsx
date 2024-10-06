@@ -38,13 +38,7 @@ const StyledSocialNetworks = styled.section`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* flex-wrap: wrap; */
-        /* gap:150px; */
         
-        //height: 100%;
-        //min-height: 135px;
-        /* padding: 55px 0 50px; */
-
         li>a {
             color: rgba(255, 255, 255, 0.5);
 
