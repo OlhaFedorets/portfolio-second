@@ -11,5 +11,4 @@ export const Container = styled.div<ContainerPropsType>`
     min-height: 100%;
     padding:  ${props => props.padding || "0 15px"};
     margin: 0 auto;
-    border: 1px solid red;
 ` 
