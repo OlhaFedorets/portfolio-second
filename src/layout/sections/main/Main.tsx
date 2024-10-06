@@ -34,18 +34,12 @@ export const Main = () => {
 
 
 const StyledMain = styled.section`
-    /* min-height: 100vh; */
     display: flex;
     margin-top: 90px;
 `
 
 const MainTitle = styled.h1`
     ${font({weight: 700, Fmax: 50, Fmin: 36})}
-    /* font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 50px; */
-    //line-height: 120%;
-    //letter-spacing: 0.01em;
     text-align: center;  
     color: ${theme.colors.black};
 
@@ -79,17 +73,13 @@ const PhotoWrapper = styled.div`
         span{
             
         :first-child {
-            /* font-family: 'Poppins', sans-serif; */
             font-weight: 700;
             font-size: 20px;
-            /* color: ${theme.colors.white}; */
         }
 
         :last-child {
-            /* font-family: 'Poppins', sans-serif; */
             font-weight: 500;
             font-size: 15px;
-            /* color: ${theme.colors.white}; */
             }
         }
         
@@ -98,17 +88,15 @@ const PhotoWrapper = styled.div`
         }
     }
         
-            
     
-
     #ui {
-    align-self: flex-start;
-    margin-top: 50px;
+        align-self: flex-start;
+        margin-top: 50px;
     }
 
     #web {
-    align-self: flex-end;
-    margin-bottom: 100px;
+        align-self: flex-end;
+        margin-bottom: 100px;
     }
 `
 
@@ -120,7 +108,7 @@ const Photo = styled.img`
 
     @media ${theme.media.mobile} {
         width: 255px;
-    height: 400px;
+        height: 400px;
     }
 `
 
