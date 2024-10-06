@@ -1,5 +1,5 @@
 import React from "react";
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import { theme } from "../../../styles/Theme";
 
 
@@ -12,14 +12,14 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
                 </span>
             </BurgerButton>
             <MobileMenuPopUp isOpen={false}>
-            <ul>
-                {props.menuItems.map((item, index) => {
-                    return <ListItem key={index}>
-                        <Link href="">{item}</Link>
-                    </ListItem>
-                })}
-            </ul>
-            </MobileMenuPopUp>            
+                <ul>
+                    {props.menuItems.map((item, index) => {
+                        return <ListItem key={index}>
+                            <Link href="">{item}</Link>
+                        </ListItem>
+                    })}
+                </ul>
+            </MobileMenuPopUp>
         </StyledMobileMenu>
     );
 };
@@ -33,7 +33,7 @@ const StyledMobileMenu = styled.nav`
     }
 `
 
-const MobileMenuPopUp = styled.div<{isOpen: boolean}>`
+const MobileMenuPopUp = styled.div<{ isOpen: boolean }>`
     position: fixed;
     top: 0;
     left: 0;
@@ -43,7 +43,7 @@ const MobileMenuPopUp = styled.div<{isOpen: boolean}>`
     background-image: ${theme.colors.gradientAccent};
     display: none;
 
-    ${props => props.isOpen && css<{isOpen: boolean}>`
+    ${props => props.isOpen && css<{ isOpen: boolean }>`
         display: flex;
         align-items: center;
         justify-content: center;
@@ -64,11 +64,11 @@ const MobileMenuPopUp = styled.div<{isOpen: boolean}>`
         border-radius: 100px;
         padding: 10px 20px;       
         background-image: ${theme.colors.gradientBG};
-        }
+    }
 
 `
 
-const BurgerButton = styled.button<{isOpen: boolean}>`
+const BurgerButton = styled.button<{ isOpen: boolean }>`
     position: fixed;
     width: 200px;
     height: 200px;
@@ -85,9 +85,9 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
         left: 20px;      
         bottom: 60px;
 
-        ${props => props.isOpen && css<{isOpen: boolean}>`
-         background-color: rgba(255, 255, 255, 0);
-    `}
+        ${props => props.isOpen && css<{ isOpen: boolean }>`
+        background-color: rgba(255, 255, 255, 0);
+        `}
 
         &::before {
             content: "";
@@ -98,9 +98,9 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             position: absolute;
             transform: translateY(-10px);
 
-            ${props => props.isOpen && css<{isOpen: boolean}>`
+            ${props => props.isOpen && css<{ isOpen: boolean }>`
             transform: rotate(-45deg) translateY(0);
-    `}
+            `}
         }
 
         &::after {
@@ -112,10 +112,10 @@ const BurgerButton = styled.button<{isOpen: boolean}>`
             position: absolute;
             transform: translateY(10px);
 
-            ${props => props.isOpen && css<{isOpen: boolean}>`
+            ${props => props.isOpen && css<{ isOpen: boolean }>`
             transform: rotate(45deg) translateY(0);
             width:36px;
-    `}
+            `}
         }
     }
 `
