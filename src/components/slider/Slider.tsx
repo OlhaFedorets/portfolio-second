@@ -22,7 +22,6 @@ export const Slider = () => {
 
 const StyledSlider = styled.div`
     max-width: 793px;
-    border: 1px solid red;
 `
     const Slide = styled.div`
     margin-top: 30px;
@@ -33,9 +32,6 @@ const StyledSlider = styled.div`
 
 const Name = styled.span`
 ${font({family: "Playfair Display", weight: 700, Fmax: 30, Fmin: 26})}
-    /* font-family: "Playfair Display", sans-serif;
-    font-weight: 700;
-    font-size: 30px; */
     line-height: 120%;
     letter-spacing: 0.01em;
 
