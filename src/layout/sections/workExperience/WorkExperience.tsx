@@ -28,7 +28,6 @@ export const WorkExperience = () => {
     )
 }
 
- 
 const StyledWorkExperience = styled.section`
     ${FlexContainer} {
         @media ${theme.media.tablet} {
