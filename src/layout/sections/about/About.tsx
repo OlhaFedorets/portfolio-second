@@ -5,6 +5,7 @@ import { PersonalAchievements } from "./personalAchievements/PersonalAchievement
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
 import { font } from "../../../styles/Common";
+import Typewriter from 'typewriter-effect';
 
 const achievementItems = ["Projects Done", "Happy Clients", "Clients on Worldwide"]
 
@@ -15,7 +16,16 @@ export const About = () => {
             <Container>
                 <FlexContainer direction={"column"}>
                     <StyledPersonalInfo>
-                        <StyledPersonalTitle>About Me.</StyledPersonalTitle>
+                        {/*<StyledPersonalTitle>About Me.</StyledPersonalTitle>*/}
+                        <StyledPersonalTitle>
+                        <Typewriter
+                            options={{
+                                strings: ['About', 'Me.'],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        />
+                        </StyledPersonalTitle>
                         <StyledPersonalText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.</StyledPersonalText>
                     </StyledPersonalInfo>
                     <PersonalAchievements  achievementItems={achievementItems}/>
@@ -27,6 +37,7 @@ export const About = () => {
 
 
 const StyledAbout = styled.section`
+    position: relative;
     color: ${theme.colors.white};
 `
 const StyledPersonalInfo = styled.div`
