@@ -8,10 +8,12 @@ import { WorkExperience } from './layout/sections/workExperience/WorkExperience'
 import { Testimony } from './layout/sections/testimony/Testimony';
 import { Contacts } from './layout/sections/contacts/Contacts';
 import { Footer } from './layout/footer/Footer';
+import {Particle} from "./components/particle/Particle";
 
 function App() {
     return (
         <div className="App">
+            <Particle/>
             <Header/>
             <Main/>
             <SocialNetworks />
