@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import photo from "./../../../assets/images/home.jpg"
-import { FlexContainer } from "../../../components/FlexContainer";
-import { Container } from "../../../components/Container";
-import { theme } from "../../../styles/Theme";
-import { font } from "../../../styles/Common";
+import photo from "./../../../assets/images/photo.webp"
+import {FlexContainer} from "../../../components/FlexContainer";
+import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
+import rectangleImage from "../../../assets/images/Rectangle-10.webp";
 
 
 export const Main = () => {
@@ -20,7 +21,9 @@ export const Main = () => {
                             <span>UI/UX Designer</span>
                             <span>4 Years</span>
                         </div>
-                        <Photo src={photo} />
+
+                            <Photo src={photo} />
+
                         <div id="web">
                             <span>Web Developer</span>
                             <span>2 Years</span>
@@ -58,37 +61,40 @@ const PhotoWrapper = styled.div`
     align-items: center;
     gap: 15px;
 
+    z-index: 1;
+    position: relative;
+
     div {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         color: ${theme.colors.white};
-        
+
         border-radius: 200px;
         width: 288px;
         height: 100px;
         background-image: ${theme.colors.gradientAccent};
 
-        span{
-            
-        :first-child {
-            font-weight: 700;
-            font-size: 20px;
-        }
+        span {
 
-        :last-child {
-            font-weight: 500;
-            font-size: 15px;
+            :first-child {
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            :last-child {
+                font-weight: 500;
+                font-size: 15px;
             }
         }
-        
+
         @media screen and (max-width: 1010px) {
-            display: none; 
+            display: none;
         }
     }
-        
-    
+
+
     #ui {
         align-self: flex-start;
         margin-top: 50px;
@@ -98,13 +104,32 @@ const PhotoWrapper = styled.div`
         align-self: flex-end;
         margin-bottom: 100px;
     }
+
+    ::after {
+        content: "";
+        background-image: url(${rectangleImage});
+        display: block;
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+
+        position: absolute;
+        top: 30px;
+        left: 510px;
+        z-index: -1;
+
+    }
+
 `
 
 const Photo = styled.img`
     width: 393px;
     height: 600px;
     object-fit: cover;
-    object-position: center;
+    object-position: center;   
+    border-radius: 200px;
+
+
 
     @media ${theme.media.mobile} {
         width: 255px;
