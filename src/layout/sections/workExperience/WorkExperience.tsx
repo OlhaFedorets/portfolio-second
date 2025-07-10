@@ -36,6 +36,7 @@ const StyledWorkExperience = styled.section`
             gap: 20px;
         }
     }
+    position: relative;
 `
 
 const WorkAreas = styled.div`
