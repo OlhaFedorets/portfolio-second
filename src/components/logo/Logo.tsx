@@ -7,8 +7,8 @@ import { theme } from "../../styles/Theme"
 export const Logo = () => {
     return (
         <StyledLogo>
-            <a href="">A</a>
-            <span>Alea</span>
+            <a href="">O</a>
+            <span>Olga</span>
         </StyledLogo>
     );
 };
