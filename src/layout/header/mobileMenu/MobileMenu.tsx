@@ -128,6 +128,7 @@ const Link = styled.a`
     font-size: 20px;
     text-align: center;
     color: ${theme.colors.white};
+    transition: color 0.3s, transform 0.3s;
     
     &:hover {
         transform: translateY(-4px);
