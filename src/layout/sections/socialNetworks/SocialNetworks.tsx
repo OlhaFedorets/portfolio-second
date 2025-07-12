@@ -40,10 +40,14 @@ const StyledSocialNetworks = styled.section`
         align-items: center;
         
         li>a {
+            display: inline-block;
             color: rgba(255, 255, 255, 0.5);
+            transition: color 0.3s, transform 0.3s;
+            
 
             &:hover {
             color: ${theme.colors.white};
+                transform: translateY(-4px);
             }
         }
 
