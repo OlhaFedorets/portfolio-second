@@ -2,51 +2,32 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../../../styles/Theme";
 
+const menuItems = [
+    {title: "Home", href: "home" },
+    {title: "About", href: "about" },
+    {title: "Services", href: "services" },
+    {title: "Let's talk", href: "contact" },
+    ]
 
-export const Menu = (props: { menuItems: Array<string> }) => {
+export const Menu = () => {
     return (
-        <StyledMenu>
             <ul>
 
-                {props.menuItems.map((item, index) => {
+                {menuItems.map((item, index) => {
                     return <ListItem key={index}>
-                        <Link href="">{item}</Link>
+                        <Link href={`#${item.href}`}>{item.title}</Link>
                     </ListItem>
                 })}
 
             </ul>
-        </StyledMenu>
     );
 };
-
-
-const StyledMenu = styled.nav`
-    ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-
-
-    li:last-child a {
-        display: block;
-        width: 134px;
-        height: 50px;
-        border-radius: 100px;
-        padding: 10px 20px;       
-        background-image: ${theme.colors.gradientBG};
-        }
-    }
-
-    @media ${theme.media.tablet} {
-        display: none;
-    }
-`
 
 const ListItem = styled.li`
     
 `
 const Link = styled.a`
+    display: block;
     font-weight: 500;
     font-size: 20px;
     text-align: center;
