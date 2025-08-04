@@ -12,7 +12,7 @@ const achievementItems = ["Projects Done", "Happy Clients", "Clients on Worldwid
 
 export const About = () => {
     return (
-        <StyledAbout>
+        <StyledAbout id={"about"}>
             <Container>
                 <FlexContainer direction={"column"}>
                     <StyledPersonalInfo>
