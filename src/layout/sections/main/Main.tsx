@@ -10,7 +10,7 @@ import rectangleImage from "../../../assets/images/Rectangle-10.webp";
 
 export const Main = () => {
     return (
-        <StyledMain>
+        <StyledMain id={"home"}>
             <Container>
                 <FlexContainer direction={"column"} align={"center"} justify={"space-around"}>
                     <MainTitle>
@@ -117,7 +117,10 @@ const PhotoWrapper = styled.div`
         top: 30px;
         left: 510px;
         z-index: -1;
-
+        
+        @media screen and (max-width: 1010px) {
+            display: none;
+        }
     }
 
 `
