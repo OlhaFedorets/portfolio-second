@@ -1,22 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import { Logo } from "../../components/logo/Logo";
-import { Menu } from "./menu/Menu";
 import { FlexContainer } from "../../components/FlexContainer";
 import { Container } from "../../components/Container";
 import { theme } from "../../styles/Theme";
 import { MobileMenu } from "./mobileMenu/MobileMenu";
+import {DesktopMenu} from "./desktopMenu/DesktopMenu";
 
-const menuItems = ["Home", "About", "Services", "Let's talk"]
 
-export const Header = () => {
+export const Header: React.FC = () => {
     return (
         <StyledHeader>
             <Container>
                 <FlexContainer justify="space-between" align="center">
                     <Logo />
-                    <Menu menuItems={menuItems} />
-                    <MobileMenu menuItems={menuItems} />
+                    <DesktopMenu />
+                    <MobileMenu />
                 </FlexContainer>
             </Container>
         </StyledHeader>
