@@ -10,7 +10,7 @@ import { theme } from "../../../styles/Theme";
 
 export const WorkExperience = () => {
     return (
-        <StyledWorkExperience>
+        <StyledWorkExperience id={"services"}>
             <Container>
                 <FlexContainer justify={"space-between"}>
                     <WorkAreas>                    
