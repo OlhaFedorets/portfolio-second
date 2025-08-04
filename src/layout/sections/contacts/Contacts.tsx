@@ -11,7 +11,7 @@ import { font } from "../../../styles/Common";
 
 export const Contacts = () => {
     return (
-        <StyledContacts>
+        <StyledContacts id={"contact"}>
             <Container maxWidth={"1000px"} padding={"0"}>
                 <Title>Send me a <span>message</span>, I will be touch with you shortly.</Title>
                 <Form action="">
