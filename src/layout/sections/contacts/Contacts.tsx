@@ -34,7 +34,6 @@ export const Contacts = () => {
 const StyledContacts = styled.section`
     background-color: ${theme.colors.black};
     color: ${theme.colors.white};
-    
 `
 
 const Title = styled.h3`
