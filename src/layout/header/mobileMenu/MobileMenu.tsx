@@ -39,6 +39,7 @@ const MobileMenuPopUp = styled.div<{ isOpen: boolean }>`
     bottom: 0;
     z-index: 99999;
     background-image: ${theme.colors.gradientAccent};
+    opacity: 0.9;
     display: none;
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
