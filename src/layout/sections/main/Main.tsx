@@ -18,7 +18,9 @@ export const Main = () => {
                     </MainTitle>
                     <PhotoWrapper>
                         <div id="ui">
-                            <span>Front-End Developer</span>
+                            <span>
+                                Front-End Developer
+                            </span>
                         </div>
 
                             <Photo src={photo} />
