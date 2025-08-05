@@ -18,6 +18,7 @@ export const About = () => {
                     <StyledPersonalInfo>
                         {/*<StyledPersonalTitle>About Me.</StyledPersonalTitle>*/}
                         <StyledPersonalTitle>
+                            {/*About me*/}
                         <Typewriter
                             options={{
                                 strings: ['About', 'Me.'],
@@ -45,7 +46,13 @@ const StyledPersonalInfo = styled.div`
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        gap: 10px;        
+        gap: 10px;
+    
+    
+    @media screen and (max-width: 950px) {
+        flex-direction: column;
+        margin-left: 20px;
+    }
 `
 
 const StyledPersonalTitle = styled.h2`
