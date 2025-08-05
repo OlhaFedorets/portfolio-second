@@ -1,39 +1,51 @@
 import React from "react";
 import styled from "styled-components";
-import { theme } from "../../../styles/Theme";
+import {theme} from "../../../styles/Theme";
+import {Link} from "react-scroll";
 
 const menuItems = [
-    {title: "Home", href: "home" },
-    {title: "About", href: "about" },
-    {title: "Services", href: "services" },
-    {title: "Let's talk", href: "contact" },
-    ]
+    {title: "Home", href: "home"},
+    {title: "About", href: "about"},
+    {title: "Services", href: "services"},
+    {title: "Contact", href: "contact"},
+]
 
 export const Menu = () => {
     return (
-            <ul>
+        <ul>
 
-                {menuItems.map((item, index) => {
-                    return <ListItem key={index}>
-                        <Link href={`#${item.href}`}>{item.title}</Link>
-                    </ListItem>
-                })}
+            {menuItems.map((item, index) => {
+                return <ListItem key={index}>
+                    <NavLink
+                        activeClass="active"
+                        to={item.href}
+                        smooth={true}
+                        spy={true}
+                        offset={-70}
+                    >
+                        {item.title}
+                    </NavLink>
+                </ListItem>
+            })}
 
-            </ul>
+        </ul>
     );
 };
 
 const ListItem = styled.li`
-    
+
 `
-const Link = styled.a`
+const NavLink = styled(Link)`
     display: block;
     font-weight: 500;
     font-size: 20px;
     text-align: center;
     color: ${theme.colors.white};
-    
-    &:hover {
-        transform: translateY(-4px);
+
+    &:hover, &.active {
+        font-size: 22px;
+        color: #281471;
+        transition: all 0.3s ease;
     }
+
 `
