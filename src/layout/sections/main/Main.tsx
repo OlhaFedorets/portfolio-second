@@ -14,19 +14,24 @@ export const Main = () => {
             <Container>
                 <FlexContainer direction={"column"} align={"center"} justify={"space-around"}>
                     <MainTitle>
-                        I’m <span>Olga</span>. Energetic front-end developer looking for the opportunities to grow professionally
+                        I’m <span>Olga</span>. Energetic front-end developer looking for the opportunities to grow
+                        professionally
                     </MainTitle>
                     <PhotoWrapper>
                         <div id="ui">
                             <span>
-                                Front-End Developer
+                                {/*Front-End Developer*/}
+                                UI/UX Designer
                             </span>
+                            <span>4 years</span>
                         </div>
-
-                            <Photo src={photo} />
-
+                        <Photo src={photo}/>
                         <div id="web">
-                            <span>Download CV</span>
+                            <span>
+                                {/*Download CV*/}
+                                Wed Developer
+                            </span>
+                            <span>2 years</span>
                         </div>
                     </PhotoWrapper>
                 </FlexContainer>
@@ -43,7 +48,7 @@ const StyledMain = styled.section`
 
 const MainTitle = styled.h1`
     ${font({weight: 700, Fmax: 50, Fmin: 36})}
-    text-align: center;  
+    text-align: center;
     color: ${theme.colors.black};
 
     span {
@@ -77,18 +82,18 @@ const PhotoWrapper = styled.div`
         background-image: ${theme.colors.gradientAccent};
 
         span {
+            //font-weight: 700;
+            //font-size: 20px;
+
+            :first-child {
                 font-weight: 700;
                 font-size: 20px;
+            }
 
-            //:first-child {
-            //    font-weight: 700;
-            //    font-size: 20px;
-            //}
-            //
-            //:last-child {
-            //    font-weight: 500;
-            //    font-size: 15px;
-            //}
+            :last-child {
+                font-weight: 500;
+                font-size: 15px;
+            }
         }
 
         @media screen and (max-width: 1010px) {
@@ -119,7 +124,7 @@ const PhotoWrapper = styled.div`
         top: 30px;
         left: 510px;
         z-index: -1;
-        
+
         @media screen and (max-width: 1010px) {
             display: none;
         }
@@ -131,9 +136,8 @@ const Photo = styled.img`
     width: 393px;
     height: 600px;
     object-fit: cover;
-    object-position: center;   
+    object-position: center;
     border-radius: 200px;
-
 
 
     @media ${theme.media.mobile} {
