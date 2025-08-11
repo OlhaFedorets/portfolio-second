@@ -12,34 +12,34 @@ export const SocialNetworks = () => {
     return (
         <StyledSocialNetworks>
             <Container>
-            <ul>
-                <li>
-                    <a href=""><Icon iconId={"dribble"}  width={"123"} height={"38"} viewBox={"0 0 130 38"}/></a>
-                </li>
-                <li>
-                    <a href=""><Icon iconId={"linkedin"} width={"132"} height={"38"} viewBox={"0 0 132 38"}/></a>
-                </li>
-                <li>
-                    <a href=""><Icon iconId={"medium"} width={"161"} height={"30"} viewBox={"0 0 161 38"}/></a>
-                </li>
-                <li>
-                    <a href=""><Icon iconId={"behance"} width={"162"} height={"38"} viewBox={"0 0 167 38"}/></a>
-                </li>
-            </ul>
-            {/*    <ul>*/}
+            {/*<ul>*/}
             {/*    <li>*/}
-            {/*        <a href=""><Icon iconId={"js"}  width={"140"} height={"140"} viewBox={"0 0 16 16"}/></a>*/}
+            {/*        <a href=""><Icon iconId={"dribble"}  width={"123"} height={"38"} viewBox={"0 0 130 38"}/></a>*/}
             {/*    </li>*/}
             {/*    <li>*/}
-            {/*        <a href=""><Icon iconId={"ts"} width={"140"} height={"140"} viewBox={"0 0 16 16"}/></a>*/}
+            {/*        <a href=""><Icon iconId={"linkedin"} width={"132"} height={"38"} viewBox={"0 0 132 38"}/></a>*/}
             {/*    </li>*/}
             {/*    <li>*/}
-            {/*        <a href=""><Icon iconId={"react"} width={"140"} height={"140"} viewBox={"0 0 16 16"}/></a>*/}
+            {/*        <a href=""><Icon iconId={"medium"} width={"161"} height={"30"} viewBox={"0 0 161 38"}/></a>*/}
             {/*    </li>*/}
             {/*    <li>*/}
-            {/*        <a href=""><Icon iconId={"redux"} width={"144"} height={"144"} viewBox={"2 2 20 20"}/></a>*/}
+            {/*        <a href=""><Icon iconId={"behance"} width={"162"} height={"38"} viewBox={"0 0 167 38"}/></a>*/}
             {/*    </li>*/}
             {/*</ul>*/}
+                <ul>
+                <li>
+                    <a href=""><Icon iconId={"js1"}  width={"140"} height={"140"} viewBox={"0 0 16 16"}/></a>
+                </li>
+                <li>
+                    <a href=""><Icon iconId={"ts1"} width={"140"} height={"140"} viewBox={"0 0 16 16"}/></a>
+                </li>
+                <li>
+                    <a href=""><Icon iconId={"react1"} width={"140"} height={"140"} viewBox={"0 0 16 16"}/></a>
+                </li>
+                <li>
+                    <a href=""><Icon iconId={"redux1"} width={"144"} height={"144"} viewBox={"2 2 20 20"}/></a>
+                </li>
+            </ul>
             </Container>                                                          
         </StyledSocialNetworks>
     );
