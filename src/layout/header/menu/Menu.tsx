@@ -5,9 +5,9 @@ import {Link} from "react-scroll";
 
 const menuItems = [
     {title: "Home", href: "home"},
-    {title: "About", href: "about"},
-    {title: "Services", href: "services"},
-    {title: "Contact", href: "contact"},
+    {title: "About Me", href: "about"},
+    {title: "Skills", href: "skills"},
+    {title: "Contacts", href: "contact"},
 ]
 
 export const Menu = () => {
@@ -41,6 +41,7 @@ const NavLink = styled(Link)`
     font-size: 20px;
     text-align: center;
     color: ${theme.colors.white};
+    transition: 0.3s ease-in-out;
 
     &:hover, &.active {
         font-size: 22px;
