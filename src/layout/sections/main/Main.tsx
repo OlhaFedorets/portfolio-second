@@ -14,23 +14,24 @@ export const Main = () => {
             <Container>
                 <FlexContainer direction={"column"} align={"center"} justify={"space-around"}>
                     <MainTitle>
-                        I’m <span>Alea</span>. I will create a web design that can give value to your company
+                        I’m <span>Olga</span>. I’m a front-end developer looking for the opportunities to grow professionally.
+                        {/*I will create a web design that can give value to your company*/}
                     </MainTitle>
                     <PhotoWrapper>
                         <div id="ui">
                             <span>
-                                {/*Front-End Developer*/}
-                                UI/UX Designer
+                                Front-End Developer
+                                {/*UI/UX Designer*/}
                             </span>
-                            <span>4 years</span>
+                            {/*<span>4 years</span>*/}
                         </div>
                         <Photo src={photo}/>
                         <div id="web">
                             <span>
-                                {/*Download CV*/}
-                                Wed Developer
+                                Download CV
+                                {/*Wed Developer*/}
                             </span>
-                            <span>2 years</span>
+                            {/*<span>2 years</span>*/}
                         </div>
                     </PhotoWrapper>
                 </FlexContainer>
@@ -81,18 +82,18 @@ const PhotoWrapper = styled.div`
         background-image: ${theme.colors.gradientAccent};
 
         span {
-            //font-weight: 700;
-            //font-size: 20px;
+            font-weight: 700;
+            font-size: 20px;
 
-            :first-child {
-                font-weight: 700;
-                font-size: 20px;
-            }
-
-            :last-child {
-                font-weight: 500;
-                font-size: 15px;
-            }
+            //:first-child {
+            //    font-weight: 700;
+            //    font-size: 20px;
+            //}
+            //
+            //:last-child {
+            //    font-weight: 500;
+            //    font-size: 15px;
+            //}
         }
 
         @media screen and (max-width: 1010px) {
