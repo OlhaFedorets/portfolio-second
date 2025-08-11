@@ -8,6 +8,7 @@ import {WorkExperience} from './layout/sections/workExperience/WorkExperience';
 import {Testimony} from './layout/sections/testimony/Testimony';
 import {Contacts} from './layout/sections/contacts/Contacts';
 import {Particle} from "./components/particle/Particle";
+import {Skills} from "./layout/sections/skills/Skills";
 
 function App() {
     return (
@@ -17,7 +18,8 @@ function App() {
             <Main/>
             <SocialNetworks />
             <About/>
-            <WorkExperience/>
+            <Skills/>
+            {/*<WorkExperience/>*/}
             <Testimony/>
             <Contacts/>
         </div>
