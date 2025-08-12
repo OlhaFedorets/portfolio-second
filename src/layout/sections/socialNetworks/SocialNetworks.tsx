@@ -28,16 +28,16 @@ export const SocialNetworks = () => {
             {/*</ul>*/}
                 <ul>
                 <li>
-                    <a href=""><Icon iconId={"js1"}  width={"140"} height={"140"} viewBox={"0 0 16 16"}/></a>
+                    <a href=""><Icon iconId={"js1"}  width={"100"} height={"100"} viewBox={"0 0 16 16"}/></a>
                 </li>
                 <li>
-                    <a href=""><Icon iconId={"ts1"} width={"140"} height={"140"} viewBox={"0 0 16 16"}/></a>
+                    <a href=""><Icon iconId={"ts1"} width={"100"} height={"100"} viewBox={"0 0 16 16"}/></a>
                 </li>
                 <li>
-                    <a href=""><Icon iconId={"react1"} width={"140"} height={"140"} viewBox={"0 0 16 16"}/></a>
+                    <a href=""><Icon iconId={"react1"} width={"100"} height={"100"} viewBox={"0 0 16 16"}/></a>
                 </li>
                 <li>
-                    <a href=""><Icon iconId={"redux1"} width={"144"} height={"144"} viewBox={"2 2 20 20"}/></a>
+                    <a href=""><Icon iconId={"redux1"} width={"100"} height={"100"} viewBox={"2 2 20 20"}/></a>
                 </li>
             </ul>
             </Container>                                                          
@@ -67,7 +67,7 @@ const StyledSocialNetworks = styled.section`
 
         @media screen and (max-width: 600px) {
             flex-direction: column;
-            gap: 15px;;
+            gap: 15px;
         }
     }
 `
