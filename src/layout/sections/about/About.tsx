@@ -83,8 +83,8 @@ const StyledPersonalText = styled.div`
     gap: 20px;
     /*flex: 2;*/    
     max-width: 793px;
-    min-width: 449px;
-    ${font({weight: 500, Fmax: 30, Fmin: 23})};
+    min-width: 355px;
+    ${font({weight: 400, Fmax: 28, Fmin: 20})};
     opacity: 0.8;
     
     @media ${theme.media.mobile} {
