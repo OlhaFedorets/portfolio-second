@@ -9,6 +9,7 @@ import {Testimony} from './layout/sections/testimony/Testimony';
 import {Contacts} from './layout/sections/contacts/Contacts';
 import {Particle} from "./components/particle/Particle";
 import {Skills} from "./layout/sections/skills/Skills";
+import {Projects} from "./layout/sections/projects/Projects";
 
 function App() {
     return (
@@ -19,8 +20,9 @@ function App() {
             <SocialNetworks />
             <About/>
             <Skills/>
+            <Projects/>
             {/*<WorkExperience/>*/}
-            <Testimony/>
+            {/*<Testimony/>*/}
             <Contacts/>
         </div>
     );
