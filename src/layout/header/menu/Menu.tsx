@@ -7,6 +7,7 @@ const menuItems = [
     {title: "Home", href: "home"},
     {title: "About Me", href: "about"},
     {title: "Skills", href: "skills"},
+    {title: "Projects", href: "projects"},
     {title: "Contacts", href: "contact"},
 ]
 
@@ -45,7 +46,7 @@ const NavLink = styled(Link)`
 
     &:hover, &.active {
         font-size: 22px;
-        color: #281471;
+        color: ${theme.colors.secondaryBg};
         transition: all 0.3s ease;
     }
 
