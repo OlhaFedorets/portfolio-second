@@ -4,6 +4,7 @@ import { Icon } from "../../../components/icon/Icon";
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
 import { font } from "../../../styles/Common";
+import {Button} from "../../../components/Button";
 
 
 
@@ -22,7 +23,7 @@ export const Contacts = () => {
                     </FirstColumn>
                     <SecondColumn>
                         <Field placeholder="Enter Your Email Adress" />
-                        <Button type="submit"><Icon iconId={"mail"} width={"20"} height={"20"} viewBox={"0 0 18 14"}/>Send Message</Button>
+                        <Button type="submit"><a href={''}><Icon iconId={"mail"} width={"20"} height={"20"} viewBox={"0 0 18 14"}/>Send Message</a></Button>
                     </SecondColumn>
                 </Form>
             </Container>
@@ -114,31 +115,31 @@ color: ${theme.colors.white};
     }
 `
 
-const Button = styled.button`
-    border-radius: 30px;
-    padding: 20px 40px;
-    width: 256px;
-    height: 64px;
-    background-image: ${theme.colors.gradientAccent};
-    color: ${theme.colors.white};
-
-    ${font({weight:400, Fmax: 20, Fmin: 16})}
-    
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    svg {
-        margin-right: 10px;
-    }
-
-    @media ${theme.media.tablet} {
-        width: 135px;
-        height: 40px;
-        bottom: -40px;
-        padding: 0;
-        svg {
-            display: none;
-        }
-    }
-`
+// const Button = styled.button`
+//     border-radius: 30px;
+//     padding: 20px 40px;
+//     width: 256px;
+//     height: 64px;
+//     background-image: ${theme.colors.gradientAccent};
+//     color: ${theme.colors.white};
+//
+//     ${font({weight:400, Fmax: 20, Fmin: 16})}
+//
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+//
+//     svg {
+//         margin-right: 10px;
+//     }
+//
+//     @media ${theme.media.tablet} {
+//         width: 135px;
+//         height: 40px;
+//         bottom: -40px;
+//         padding: 0;
+//         svg {
+//             display: none;
+//         }
+//     }
+// `
