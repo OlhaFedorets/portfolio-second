@@ -1,29 +1,50 @@
-import React from "react";
+import React, {ElementRef, useRef} from "react";
 import styled from "styled-components";
 import { Icon } from "../../../components/icon/Icon";
 import { Container } from "../../../components/Container";
 import { theme } from "../../../styles/Theme";
 import { font } from "../../../styles/Common";
 import {Button} from "../../../components/Button";
-
-
-
+import emailjs from '@emailjs/browser';
 
 
 export const Contacts = () => {
+
+    const form = useRef<ElementRef<'form'>>(null);
+
+    const sendEmail = (e: any) => {
+        e.preventDefault();
+
+        if (!form.current) return;
+
+        emailjs
+            .sendForm('service_zltemnz', 'template_iebmkyh', form.current, {
+                publicKey: 'pzc__QE8pnmbbYqqM',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+        e.target.reset();
+    };
+
     return (
         <StyledContacts id={"contact"}>
             <Container maxWidth={"1000px"} padding={"0"}>
                 <Title>Send me a <span>message</span>, I will be touch with you shortly.</Title>
-                <Form action="">
+                <Form ref={form} onSubmit={sendEmail}>
                     <FirstColumn>
-                        <Field placeholder="Your Name" />
-                        <Field placeholder="Your Subject" />
-                        <Field as={"textarea"} placeholder="Your Message" />
+                        <Field required placeholder="Your Name" name={"user_name"}/>
+                        <Field required placeholder="Your Subject" name={"subject"}/>
+                        <Field required as={"textarea"} placeholder="Your Message" name={"message"}/>
                     </FirstColumn>
                     <SecondColumn>
-                        <Field placeholder="Enter Your Email Adress" />
-                        <Button type="submit"><a href={''}><Icon iconId={"mail"} width={"20"} height={"20"} viewBox={"0 0 18 14"}/>Send Message</a></Button>
+                        <Field required placeholder="Enter Your Email Adress" name={"email"}/>
+                        <Button type="submit"><Icon iconId={"mail"} width={"20"} height={"20"} viewBox={"0 0 18 14"}/>Send Message</Button>
                     </SecondColumn>
                 </Form>
             </Container>
@@ -67,7 +88,7 @@ const Form = styled.form`
     @media ${theme.media.tablet} {
         flex-direction: column;
         align-items: center;
-        gap: 110px;
+        gap: 50px;
     }
     
 `
@@ -78,13 +99,24 @@ const FirstColumn = styled.div`
         
     & :nth-child(2) {
         margin: 110px 0;
+
+        @media ${theme.media.tablet} {
+            margin: 50px 0;
+        }
     }
 `
 const SecondColumn = styled.div`
     max-width: 388px;
     width: 100%;
+    padding-bottom: 50px;
 
     position: relative;
+
+    ${Button} {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
 `
 
 const Field = styled.input`
@@ -114,32 +146,3 @@ color: ${theme.colors.white};
         outline: 1px solid rgba(255, 255, 255, 0.5);
     }
 `
-
-// const Button = styled.button`
-//     border-radius: 30px;
-//     padding: 20px 40px;
-//     width: 256px;
-//     height: 64px;
-//     background-image: ${theme.colors.gradientAccent};
-//     color: ${theme.colors.white};
-//
-//     ${font({weight:400, Fmax: 20, Fmin: 16})}
-//
-//     position: absolute;
-//     bottom: 0;
-//     right: 0;
-//
-//     svg {
-//         margin-right: 10px;
-//     }
-//
-//     @media ${theme.media.tablet} {
-//         width: 135px;
-//         height: 40px;
-//         bottom: -40px;
-//         padding: 0;
-//         svg {
-//             display: none;
-//         }
-//     }
-// `
