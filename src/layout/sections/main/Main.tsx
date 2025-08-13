@@ -14,22 +14,35 @@ export const Main = () => {
         <StyledMain id={"home"}>
             <Container>
                 <FlexContainer direction={"column"} align={"center"} justify={"space-around"}>
-                    <MainTitle>
-                        I’m <span>Olga</span>. I’m a front-end developer looking for the opportunities to grow
-                        professionally.
-                    </MainTitle>
+                    <StyledName>
+                        I’m <span>Fedorets Olga</span>. I’m a front-end developer <span>looking for the opportunities to grow
+                        professionally.</span>
+                    </StyledName>
+
                     <PhotoWrapper>
-                        <div id="ui">
-                            <span>Front-End Developer</span>
-                        </div>
-                        {/*<UIButton  width={'288px'} height={'100px'}>Front-End Developer</UIButton>*/}
-                        {/*<Button className={"ui"} width={'288px'} height={'100px'}>Front-End Developer</Button>*/}
+                        <Button
+                            // as={'a'}
+                            // href={""}
+                            // target={'_blank'}
+                            width={'288px'}
+                            height={'100px'}
+                            borderRadius={'200px'}
+                        ><MainTitle>
+                            Front-End Developer
+                        </MainTitle>
+                            Front-End Developer
+                        </Button>
                         <Photo src={photo}/>
-                        {/*<WebButton width={'288px'} height={'100px'}>Download CV</WebButton>*/}
-                        {/*<Button className={"web"} width={'288px'} height={'100px'} ><a>Download CV</a></Button>*/}
-                        <div id="web">
-                            <a href={''}>Download CV</a>
-                        </div>
+                        <Button
+                            as={'a'}
+                            href={""}
+                            target={'_blank'}
+                            width={'288px'}
+                            height={'100px'}
+                            borderRadius={'200px'}
+                        >
+                            Download CV
+                        </Button>
                     </PhotoWrapper>
                 </FlexContainer>
             </Container>
@@ -40,32 +53,29 @@ export const Main = () => {
 
 const StyledMain = styled.section`
     display: flex;
-    margin-top: 90px;
+    margin-top: 50px;
 `
 
-const MainTitle = styled.h1`
+const StyledName = styled.h2`
     ${font({weight: 700, Fmax: 50, Fmin: 36})}
     text-align: center;
-    color: ${theme.colors.black};
 
-    span {
+    span:first-child {
         background-image: ${theme.colors.gradientAccent};
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+    
+    span:nth-child(2) {
+        @media ${theme.media.tablet} {display: none}
 `
-// const UIButton = styled(Button)`
-//     display: block;
-//   align-self: flex-start;
-//   margin-top: 50px;
-// `;
-//
-// const WebButton = styled(Button)`
-//   align-self: flex-end;
-//   margin-bottom: 100px;
-// `;
+
+const MainTitle = styled.h1`
+    ${font({weight: 700, Fmax: 20, Fmin: 16})}
+`
+
 const PhotoWrapper = styled.div`
     display: flex;
     justify-content: center;
@@ -76,44 +86,34 @@ const PhotoWrapper = styled.div`
     position: relative;
 
 
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        border-radius: 200px;
-        width: 288px;
-        height: 100px;
-        background-image: ${theme.colors.gradientAccent};
-
-        span, a {
-            font-weight: 700;
-            font-size: 20px;
-            color: ${theme.colors.white};           
-        }
-        
-        a {
-            &:hover {
-                font-size: 22px;
-                transition: all 0.3s ease;
-            }
-        }
-
-        @media screen and (max-width: 1010px) {
-            display: none;
-        }
+    @media screen and (max-width: 1010px) {
+        flex-direction: column;
     }
 
 
-    #ui {
-        align-self: flex-start;
-        margin-top: 50px;
-    }
+    ${Button} {
+        text-align: center;
+        line-height: 100px;
+        font-weight: 700;
+        font-size: 20px;
 
-    #web {
         align-self: flex-end;
         margin-bottom: 100px;
+
+        @media screen and (max-width: 1010px) {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            margin-bottom: 0;
+        }
     }
+
+    ${Button}:first-child {
+        align-self: flex-start;
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
 
     ::after {
         content: "";
@@ -134,17 +134,6 @@ const PhotoWrapper = styled.div`
     }
 
 `
-
-// const UIButton = styled(Button)`
-//   align-self: flex-start;
-//   margin-top: 50px;
-// `;
-//
-// const WebButton = styled(Button)`
-//   align-self: flex-end;
-//   margin-bottom: 100px;
-// `;
-
 const Photo = styled.img`
     width: 393px;
     height: 600px;
@@ -158,4 +147,3 @@ const Photo = styled.img`
         height: 400px;
     }
 `
-
