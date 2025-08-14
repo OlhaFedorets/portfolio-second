@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import {Link} from "../../../../components/Link";
 import {Button} from "../../../../components/Button";
 import {theme} from "../../../../styles/Theme";
 import {Zoom} from "react-awesome-reveal";
@@ -10,6 +9,7 @@ type WorkPropsType = {
     title: string
     text: string
     src: string
+    href: string
 }
 
 export const Project: React.FC<WorkPropsType> = (props: WorkPropsType) => {
@@ -18,8 +18,8 @@ export const Project: React.FC<WorkPropsType> = (props: WorkPropsType) => {
             <Zoom damping={0.1}>
             <StyledImageWrapper>
                 <StyledImage src={props.src} alt=""/>
-                <Button width={'200px'} height={'40px'}>
-                    <a href={''}>View Project</a>
+                <Button as={'a'} href={props.href} target={'_blank'} width={'200px'} height={'40px'}>
+                    View Project
                 </Button>
             </StyledImageWrapper>
             <StyledDescription>
@@ -39,25 +39,23 @@ const StyledProject = styled.div`
     flex-grow: 1;
     max-width: 540px;
     background-color: ${theme.colors.secondaryBg};
-
-    ${Link} {
-        padding: 10px 0;
-
-        & + ${Link} {
-            margin-left: 20px;
-        }
-    }
 `
 
 const StyledImageWrapper = styled.div`
     position: relative;
 
     ${Button} {
+        text-align: center;
+        line-height: 40px;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -40%);
         transition: ${theme.animations.transition};
+        
+        &:hover {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
     }
 
     &::before {
