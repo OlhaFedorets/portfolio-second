@@ -15,7 +15,7 @@ export const Main = () => {
             <Container>
                 <FlexContainer direction={"column"} align={"center"} justify={"space-around"}>
                     <StyledName>
-                        I’m <span>Fedorets Olga</span>. I’m a front-end developer <span>looking for the opportunities to grow
+                        I’m <span>Fedorets Olga</span><span>. I’m a front-end developer looking for the opportunities to grow
                         professionally.</span>
                     </StyledName>
 
