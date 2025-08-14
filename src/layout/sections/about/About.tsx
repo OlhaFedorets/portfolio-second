@@ -66,6 +66,7 @@ const StyledPersonalInfo = styled.div`
     @media screen and (max-width: 950px) {
         flex-direction: column;
         margin-left: 20px;
+        margin-right: 20px;
     }
 `
 
@@ -81,14 +82,14 @@ const StyledPersonalText = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
-    /*flex: 2;*/    
+    //flex: 2;    
     max-width: 793px;
-    min-width: 355px;
+    min-width: 325px;
     ${font({weight: 400, Fmax: 28, Fmin: 20})};
     opacity: 0.8;
-    
+
     @media ${theme.media.mobile} {
-        min-width: 355px;
+        min-width: 325px;
     }
 `
 
