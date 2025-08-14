@@ -14,15 +14,14 @@ const projectsData = [
         title: "Todo List",
         src: todoImg,
         text: "The \"Todo List\" project provides a convenient interface for creating, editing, deleting, and displaying tasks and to-do lists. Users can easily add new tasks, set their completion status. ",
-        type: "spa",
+        href: "https://olhafedorets.github.io/todo/#",
         id: 1
     },
     {
         title: "Resume",
         src: resumeImg,
-        text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. " +
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim",
-        type: "react",
+        text: "The project that you are currently in. Designed using Styled Components library",
+        href: "https://github.com/OlhaFedorets/portfolio-second",
         id: 1
     },
 
@@ -40,6 +39,7 @@ export const Projects = () => {
                             <Project title={w.title}
                                      src={w.src}
                                      text={w.text}
+                                     href={w.href}
                                      key={w.id}
                             />
                         )
