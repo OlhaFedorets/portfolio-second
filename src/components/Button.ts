@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../styles/Theme";
-import { font } from "../styles/Common";
+import {font} from "../styles/Common";
 
 
 type ButtonPropsType = {
@@ -17,17 +17,11 @@ export const Button = styled.button<ButtonPropsType>`
     color: ${theme.colors.white};
 
     ${font({weight: 400, Fmax: 20, Fmin: 16})}
-
+    
     &:hover {
         transform: scale(1.1);
         transition: transform 0.3s ease;
     }
-    
-    // a {
-    //     color: ${theme.colors.white};
-    //
-    //     ${font({weight:400, Fmax: 20, Fmin: 16})}
-    // }
 
     svg {
         margin-right: 10px;
@@ -38,13 +32,10 @@ export const Button = styled.button<ButtonPropsType>`
         height: 40px;
         bottom: -40px;
         padding: 0;
-        
+
         svg {
             display: none;
         }
-        
     }
-
-   
 }
 `
