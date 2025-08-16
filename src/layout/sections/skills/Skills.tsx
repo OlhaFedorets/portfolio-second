@@ -130,15 +130,15 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
     color: ${theme.colors.black};
-    
+
     ${FlexContainer} {
         @media ${theme.media.tablet} {
             align-items: center;
             gap: 20px;
         }
         @media ${theme.media.mobile} {
-                     gap: 10px;
-                 }
+            gap: 10px;
+        }
     }
 `
 
