@@ -68,7 +68,6 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     background-color: ${theme.colors.secondaryBg};
-        //background-color: ${theme.colors.black};
     color: rgba(255, 255, 255, 0.5);
     padding: 55px 0;
 
