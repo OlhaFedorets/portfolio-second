@@ -62,8 +62,7 @@ const Title = styled.h3`
     ${font({weight: 400, Fmax: 50, Fmin: 36})}
     line-height: 120%;
     text-align: center;
-    margin-bottom: 50px;
-    
+    margin-bottom: 50px;    
 
     span {
         background-image: ${theme.colors.gradientAccent};
@@ -89,8 +88,7 @@ const Form = styled.form`
         flex-direction: column;
         align-items: center;
         gap: 50px;
-    }
-    
+    }    
 `
 
 const FirstColumn = styled.div`
@@ -127,15 +125,12 @@ const Field = styled.input`
     height: 34px;
     background-color: ${theme.colors.black};
 
-    
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
 
-
-color: ${theme.colors.white};
-
+    color: ${theme.colors.white};
 
     &::placeholder {
         text-align: start;
