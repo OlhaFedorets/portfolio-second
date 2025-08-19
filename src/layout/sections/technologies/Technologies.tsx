@@ -51,13 +51,6 @@ export const Technologies = () => {
 
 const StyledTechnologies = styled.section`
     padding: 30px;
-    
-        // ${FlexContainer} {
-        // @media screen and (max-width: 600px) {
-        //     flex-direction: column;
-        //     gap: 15px;
-        // }
-    }
 `
 const StyledTechnology = styled.div`
     color: rgba(255, 255, 255, 0.5);
@@ -67,8 +60,7 @@ const StyledTechnology = styled.div`
         color: ${theme.colors.white};
     }
 
-     @media screen and (max-width: 600px) {
-         display: none;
-     }
-
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 `
