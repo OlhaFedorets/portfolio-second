@@ -12,7 +12,6 @@ export const MobileMenu = () => {
         <StyledMobileMenu>
             <BurgerButton isOpen={menuIsOpen} onClick={()=>setMenuIsOpen(!menuIsOpen)}>
                 <span>
-
                 </span>
             </BurgerButton>
             <MobileMenuPopUp isOpen={menuIsOpen} onClick={()=>setMenuIsOpen(false)}>
@@ -64,7 +63,6 @@ const MobileMenuPopUp = styled.div<{ isOpen: boolean }>`
         padding: 10px 20px;       
         background-image: ${theme.colors.gradientBG};
     }
-
 `
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
@@ -73,10 +71,6 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     height: 200px;
     top: -100px;
     right: -100px;
-    //width: 60px;   // Уменьшаем размер для удобства
-    //height: 60px;
-    //top: 20px;     // Отступ сверху
-    //right: 20px;   // Отступ справа
     z-index: 9999999;
 
     span {
@@ -122,20 +116,3 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
         }
     }
 `
-
-// const ListItem = styled.li`
-//
-// `
-// const Link = styled.a`
-//
-//     font-weight: 500;
-//     font-size: 20px;
-//     text-align: center;
-//     color: ${theme.colors.white};
-//     transition: color 0.3s, transform 0.3s;
-//
-//
-//     &:hover {
-//         transform: translateY(-4px);
-//     }
-// `
