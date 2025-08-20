@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import photo from "./../../../assets/images/photo.webp"
+import photo from "./../../../assets/images/2.jpg"
 import {FlexContainer} from "../../../components/FlexContainer";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
@@ -18,12 +18,8 @@ export const Main = () => {
                         I’m <span>Fedorets Olga</span><span>. I’m a front-end developer looking for the opportunities to grow
                         professionally.</span>
                     </StyledName>
-
                     <PhotoWrapper>
                         <Button
-                            // as={'a'}
-                            // href={""}
-                            // target={'_blank'}
                             width={'288px'}
                             height={'100px'}
                             borderRadius={'200px'}
@@ -67,9 +63,11 @@ const StyledName = styled.h2`
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    
+
     span:nth-child(2) {
-        @media ${theme.media.tablet} {display: none}
+        @media ${theme.media.tablet} {
+            display: none
+        }
 `
 
 const MainTitle = styled.h1`
@@ -85,11 +83,9 @@ const PhotoWrapper = styled.div`
     z-index: 1;
     position: relative;
 
-
     @media screen and (max-width: 1010px) {
         flex-direction: column;
     }
-
 
     ${Button} {
         text-align: center;
@@ -113,7 +109,6 @@ const PhotoWrapper = styled.div`
         margin-top: 50px;
         margin-bottom: 0;
     }
-
 
     ::after {
         content: "";
@@ -140,7 +135,6 @@ const Photo = styled.img`
     object-fit: cover;
     object-position: center;
     border-radius: 200px;
-
 
     @media ${theme.media.mobile} {
         width: 255px;
