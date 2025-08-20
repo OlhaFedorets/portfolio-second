@@ -32,8 +32,6 @@ export const Project: React.FC<WorkPropsType> = (props: WorkPropsType) => {
 };
 
 
-
-
 const StyledProject = styled.div`
     width: 400px;
     flex-grow: 1;
@@ -54,8 +52,8 @@ const StyledImageWrapper = styled.div`
         transition: ${theme.animations.transition};
         
         &:hover {
-        transform: translate(-50%, -50%) scale(1.1);
-    }
+            transform: translate(-50%, -50%) scale(1.1);
+        }
     }
 
     &::before {
@@ -76,7 +74,7 @@ const StyledImageWrapper = styled.div`
             opacity: 1;
         }
     }
-    
+
     @media ${theme.media.tablet} {
         &::before {
             opacity: 1;
