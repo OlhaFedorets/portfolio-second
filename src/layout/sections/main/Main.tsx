@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import photo from "./../../../assets/images/2.jpg"
+import photo from "./../../../assets/images/photo.webp"
 import {FlexContainer} from "../../../components/FlexContainer";
 import {Container} from "../../../components/Container";
 import {theme} from "../../../styles/Theme";
@@ -135,6 +135,8 @@ const Photo = styled.img`
     object-fit: cover;
     object-position: center;
     border-radius: 200px;
+    //border: 1px solid rgba(255, 255, 255, 0.53);
+    border: 1px solid white;
 
     @media ${theme.media.mobile} {
         width: 255px;
