@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/OlhaFedorets.github.io/portfolio-second/static/css/main.31d6cfe0.css",
-    "main.js": "/OlhaFedorets.github.io/portfolio-second/static/js/main.879d0f1d.js",
-    "static/js/787.25eaef86.chunk.js": "/OlhaFedorets.github.io/portfolio-second/static/js/787.25eaef86.chunk.js",
-    "static/media/proj2.jpg": "/OlhaFedorets.github.io/portfolio-second/static/media/proj2.c76b178c1bd31af9fa15.jpg",
-    "static/media/proj1.jpg": "/OlhaFedorets.github.io/portfolio-second/static/media/proj1.76d2a733a8beac097178.jpg",
-    "static/media/icons-sprite.svg": "/OlhaFedorets.github.io/portfolio-second/static/media/icons-sprite.a6b5e02d9da20857eeb9329589729631.svg",
-    "static/media/photo.webp": "/OlhaFedorets.github.io/portfolio-second/static/media/photo.0f5ec38f37832a554f8d.webp",
-    "static/media/Rectangle-35.webp": "/OlhaFedorets.github.io/portfolio-second/static/media/Rectangle-35.32ff7ecb7071080d6515.webp",
-    "static/media/Rectangle-10.webp": "/OlhaFedorets.github.io/portfolio-second/static/media/Rectangle-10.5b74f78e6845ac054bfb.webp",
-    "index.html": "/OlhaFedorets.github.io/portfolio-second/index.html",
-    "main.879d0f1d.js.map": "/OlhaFedorets.github.io/portfolio-second/static/js/main.879d0f1d.js.map",
-    "787.25eaef86.chunk.js.map": "/OlhaFedorets.github.io/portfolio-second/static/js/787.25eaef86.chunk.js.map"
+    "main.css": "/portfolio-second/static/css/main.31d6cfe0.css",
+    "main.js": "/portfolio-second/static/js/main.40ce9d11.js",
+    "static/js/787.25eaef86.chunk.js": "/portfolio-second/static/js/787.25eaef86.chunk.js",
+    "static/media/proj2.jpg": "/portfolio-second/static/media/proj2.c76b178c1bd31af9fa15.jpg",
+    "static/media/proj1.jpg": "/portfolio-second/static/media/proj1.76d2a733a8beac097178.jpg",
+    "static/media/icons-sprite.svg": "/portfolio-second/static/media/icons-sprite.a6b5e02d9da20857eeb9329589729631.svg",
+    "static/media/photo.webp": "/portfolio-second/static/media/photo.0f5ec38f37832a554f8d.webp",
+    "static/media/Rectangle-35.webp": "/portfolio-second/static/media/Rectangle-35.32ff7ecb7071080d6515.webp",
+    "static/media/Rectangle-10.webp": "/portfolio-second/static/media/Rectangle-10.5b74f78e6845ac054bfb.webp",
+    "index.html": "/portfolio-second/index.html",
+    "main.40ce9d11.js.map": "/portfolio-second/static/js/main.40ce9d11.js.map",
+    "787.25eaef86.chunk.js.map": "/portfolio-second/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.879d0f1d.js"
+    "static/js/main.40ce9d11.js"
   ]
 }
