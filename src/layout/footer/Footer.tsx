@@ -10,18 +10,18 @@ const iconsData = [
     {
         iconId: "CV",
         viewBox: "0 0 16 16",
-        href: ''
+        href: 'https://drive.google.com/file/d/1ilbMmJmVa0cM-AKrzjJ8xyf5rV_YiIxI/view?usp=drive_link'
     },
     {
         iconId: "TG",
         viewBox: "0 0 24 24",
         href: "https://t.me/olyusha_5"
     },
-    {
-        iconId: "linkedin_logo",
-        viewBox: "0 0 25 25",
-        href: ''
-    },
+    // {
+    //     iconId: "linkedin_logo",
+    //     viewBox: "0 0 25 25",
+    //     href: ''
+    // },
     {
         iconId: "github_logo",
         viewBox: "0 0 25 25",

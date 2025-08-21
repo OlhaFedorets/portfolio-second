@@ -31,7 +31,7 @@ export const Main = () => {
                         <Photo src={photo}/>
                         <Button
                             as={'a'}
-                            href={""}
+                            href={"https://drive.google.com/file/d/1ilbMmJmVa0cM-AKrzjJ8xyf5rV_YiIxI/view?usp=drive_link"}
                             target={'_blank'}
                             width={'288px'}
                             height={'100px'}
