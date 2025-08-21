@@ -32,7 +32,7 @@ export const Technologies = () => {
                 <FlexContainer justify={"space-between"} align={"center"} wrap={"wrap"}>
                     {technologiesData.map((t, index) => {
                         return (
-                            <StyledTechnology>
+                            <StyledTechnology key={index}>
                                 <Icon
                                     iconId={t.iconId}
                                     width={"100"}

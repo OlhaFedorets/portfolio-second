@@ -22,7 +22,7 @@ const projectsData = [
         src: resumeImg,
         text: "The project that you are currently in. Designed using Styled Components library",
         href: "https://github.com/OlhaFedorets/portfolio-second",
-        id: 1
+        id: 2
     },
 
 ]
