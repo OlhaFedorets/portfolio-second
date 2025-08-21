@@ -31,7 +31,9 @@ const StyledSkill = styled.div`
     margin: 10px;
 
     @media ${theme.media.mobile} {
-        margin: 0
+        margin: 0;
+        width: 120px;
+        height: 160px;
     }
 `
 
