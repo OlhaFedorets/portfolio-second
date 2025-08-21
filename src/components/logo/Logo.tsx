@@ -7,7 +7,7 @@ import {animateScroll as scroll} from "react-scroll";
 export const Logo = () => {
     return (
         <StyledLogo>
-            <a onClick={()=>{scroll.scrollToTop()}}>O</a>
+            <a href={'logo'} onClick={()=>{scroll.scrollToTop()}}>O</a>
             <span>Olga</span>
         </StyledLogo>
     );
