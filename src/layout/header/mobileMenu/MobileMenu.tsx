@@ -8,6 +8,10 @@ export const MobileMenu = () => {
 
     const [menuIsOpen, setMenuIsOpen] = useState(false);
 
+    const closeMenuWhenClicked = () => {
+        setMenuIsOpen(false);
+    }
+
     return (
         <StyledMobileMenu>
             <BurgerButton isOpen={menuIsOpen} onClick={()=>setMenuIsOpen(!menuIsOpen)}>
@@ -15,7 +19,7 @@ export const MobileMenu = () => {
                 </span>
             </BurgerButton>
             <MobileMenuPopUp isOpen={menuIsOpen} onClick={()=>setMenuIsOpen(false)}>
-                <Menu/>
+                <Menu closeMenuWhenClicked = {closeMenuWhenClicked}/>
             </MobileMenuPopUp>
         </StyledMobileMenu>
     );

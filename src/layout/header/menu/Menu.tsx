@@ -3,6 +3,10 @@ import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {Link} from "react-scroll";
 
+type MenuProps = {
+    closeMenuWhenClicked?: () => void
+}
+
 const menuItems = [
     {title: "Home", href: "home"},
     {title: "About Me", href: "about"},
@@ -11,7 +15,12 @@ const menuItems = [
     {title: "Contacts", href: "contact"},
 ]
 
-export const Menu = () => {
+export const Menu = ({closeMenuWhenClicked} : MenuProps) => {
+
+    const closeMenu = () => {
+        closeMenuWhenClicked && closeMenuWhenClicked()
+    }
+
     return (
         <ul>
             {menuItems.map((item, index) => {
@@ -23,6 +32,7 @@ export const Menu = () => {
                             smooth={true}
                             spy={true}
                             offset={-70}
+                            onClick={closeMenu}
                         >
                             {item.title}
                         </NavLink>
