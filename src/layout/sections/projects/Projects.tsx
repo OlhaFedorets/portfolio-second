@@ -14,15 +14,15 @@ const projectsData = [
     {
         title: "Todo List",
         src: todoImg,
-        text: "The Tasks Manager provides a convenient interface for creating, editing, deleting, and displaying tasks and to-do lists. " +
-            "Stack: Typescript, React, RTK Query, MUI, Storybook, Vite",
+        text: "Task Manager provides a convenient interface for creating, editing, deleting, and displaying tasks and to-do lists. " +
+            "Stack: TypeScript, React, RTK Query, MUI, Storybook, Vite",
         href: "https://olhafedorets.github.io/todo/#",
         id: 1
     },
     {
         title: "Pet shop",
         src: petshopImg,
-        text: "The concept of adaptive layout for the pet store website. Stack: TypeScript, NextJS (App Router), Tailwind, Yandex Maps JavaScript API",
+        text: "The concept of adaptive layout for the pet store website. Stack: TypeScript, Next.js (App Router), Tailwind, Yandex Maps JavaScript API",
         href: "https://olhafedorets.github.io/petshop",
         id: 2
     },
