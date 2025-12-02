@@ -6,23 +6,32 @@ import rectangleImage from "../../../assets/images/Rectangle-35.webp"
 import {Container} from "../../../components/Container";
 import {Project} from "./project/Project";
 import todoImg from "../../../assets/images/proj1.jpg";
-import resumeImg from "../../../assets/images/proj2.jpg";
+import petshopImg from "../../../assets/images/proj2.jpg";
+import resumeImg from "../../../assets/images/proj3.jpg";
 import {font} from "../../../styles/Common";
 
 const projectsData = [
     {
         title: "Todo List",
         src: todoImg,
-        text: "The \"Todo List\" project provides a convenient interface for creating, editing, deleting, and displaying tasks and to-do lists. Users can easily add new tasks, set their completion status. ",
+        text: "The Tasks Manager provides a convenient interface for creating, editing, deleting, and displaying tasks and to-do lists. " +
+            "Stack: Typescript, React, RTK Query, MUI, Storybook, Vite",
         href: "https://olhafedorets.github.io/todo/#",
         id: 1
     },
     {
+        title: "Pet shop",
+        src: petshopImg,
+        text: "The concept of adaptive layout for the pet store website. Stack: TypeScript, NextJS (App Router), Tailwind, Yandex Maps JavaScript API",
+        href: "https://olhafedorets.github.io/petshop",
+        id: 2
+    },
+    {
         title: "Resume",
         src: resumeImg,
-        text: "The project that you are currently in. Designed using Styled Components library",
+        text: "The project that you are currently in. Designed using Figma, Styled Components library",
         href: "https://github.com/OlhaFedorets/portfolio-second",
-        id: 2
+        id: 3
     },
 
 ]
