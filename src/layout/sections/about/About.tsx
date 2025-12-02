@@ -23,13 +23,13 @@ export const About = () => {
                     </StyledPersonalTitle>
                     <StyledPersonalText>
                         <p>
-                            Hello! My name is Olga. Frontend developer with 1+ years of experience in Single Page
-                            Application development using TypeScript, JavaScript, React, Redux, Redux-toolkit, RTK
-                            Query.
+                            Hello! My name is Olga. I'm a frontend developer with 1+ year of experience in SPA
+                            and SSR development using TypeScript, JavaScript, React, Redux, Redux-toolkit, RTK
+                            Query, NextJS.
                         </p>
                         <p>
-                            I am constantly improving my skills in these technologies, and am also actively studying
-                            Next.js and React Native to expand my capabilities and achieve a higher level of
+                            I am constantly improving my skills in these technologies, and I am also actively studying
+                            React Native to expand my capabilities and achieve a higher level of
                             professionalism in my work.
                         </p>
                         <p>
