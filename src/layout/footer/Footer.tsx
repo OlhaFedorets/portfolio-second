@@ -10,7 +10,7 @@ const iconsData = [
     {
         iconId: "CV",
         viewBox: "0 0 16 16",
-        href: 'https://drive.google.com/file/d/1mPG2dOFKrOJ3-cp7WwTZcLoJZx0B1kaO/view?usp=drive_link'
+        href: 'https://drive.google.com/file/d/1l_9DYd6RcG6LXbSW84MRQrtxYJ8nTEjR/view?usp=drive_link'
     },
     {
         iconId: "TG",
